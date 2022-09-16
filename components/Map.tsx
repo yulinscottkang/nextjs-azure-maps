@@ -5,6 +5,7 @@ import {
   IAzureMapOptions,
 } from "react-azure-maps";
 import { AuthenticationType, ControlOptions } from "azure-maps-control";
+import 'azure-maps-control/dist/atlas.min.css'
 
 const option: IAzureMapOptions = {
   authOptions: {
