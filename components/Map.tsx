@@ -3,13 +3,14 @@ import {
   AzureMapsProvider,
   IAzureMapControls,
   IAzureMapOptions,
-} from "react-azure-maps";
+} from "@yulinscottkang/react-azure-maps";
 import { AuthenticationType, ControlOptions } from "azure-maps-control";
+import 'azure-maps-control/dist/atlas.min.css'
 
 const option: IAzureMapOptions = {
   authOptions: {
     authType: AuthenticationType.subscriptionKey,
-    subscriptionKey: "", // Your subscription key
+    subscriptionKey: "_iCg1nyPYBVv3Vpynd1PvTkBsOG5LpZBeVq8qP-ve9Q", // Your subscription key
   },
 };
 
