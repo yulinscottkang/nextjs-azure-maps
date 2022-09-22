@@ -251,14 +251,6 @@
     "@typescript-eslint/types" "5.37.0"
     eslint-visitor-keys "^3.3.0"
 
-"@yulinscottkang/react-azure-maps@^0.4.4-beta.2":
-  version "0.4.4-beta.2"
-  resolved "https://registry.yarnpkg.com/@yulinscottkang/react-azure-maps/-/react-azure-maps-0.4.4-beta.2.tgz#dac6ad90e782738aa44cd76a9e112f54c18d4b3a"
-  integrity sha512-xXrHloc2PgJ++h1ZniY7mWLK619VveL7fr2Va1uvg1ppwXBLqRwBFFcDIeP5mRg3a64vzlWUQzkzb6Rc/ctRvw==
-  dependencies:
-    azure-maps-control "2.0.32"
-    guid-typescript "^1.0.9"
-
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
@@ -1454,6 +1446,14 @@ queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
+
+react-azure-maps@^1.0.0-beta.0:
+  version "1.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/react-azure-maps/-/react-azure-maps-1.0.0-beta.0.tgz#cc9797bfb2a7be91b006c0a460f2bb44bbd0e766"
+  integrity sha512-959oELiPxKEWFgTNx0HIlW5w51jjSiv8nOVt4s3Y9lUhpmmPr7lAnI9RTpVCDPDXRwCyfcZClGzODttE0JrJYw==
+  dependencies:
+    azure-maps-control "2.0.32"
+    guid-typescript "^1.0.9"
 
 react-dom@18.2.0:
   version "18.2.0"

@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@yulinscottkang/react-azure-maps": "^0.4.4-beta.2",
     "next": "12.3.0",
     "react": "18.2.0",
+    "react-azure-maps": "^1.0.0-beta.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {

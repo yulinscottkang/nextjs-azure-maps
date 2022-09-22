@@ -3,31 +3,17 @@ This example shows how to integrate [react-azure-maps](https://www.npmjs.com/pac
 
 ## Prerequisite
 
-1. Install [react-azure-maps](https://www.npmjs.com/package/react-azure-maps) to your `dependencies`.
+1. Install [react-azure-maps@next](https://www.npmjs.com/package/react-azure-maps) to your `dependencies`.
 ```
-yarn add react-azure-maps
-```
-
-2. Install [next-remove-imports](https://www.npmjs.com/package/next-remove-imports) to your `devDependencies`.
-
-```
-yarn add --dev next-remove-imports
+yarn add react-azure-maps@next
 ```
 
-3. Update your `next.config.js` to use `removeImports` from [next-remove-imports](https://www.npmjs.com/package/next-remove-imports). By default, it will remove all css imports from all packages in node_modules.
+2. Import the following style sheet to your component or page
 ```js
-const removeImports = require('next-remove-imports')();
-
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
-
-module.exports = removeImports(nextConfig)
-
+import 'azure-maps-control/dist/atlas.min.css'
 ```
 
-4. Since [azure-maps-control](https://www.npmjs.com/package/azure-maps-control) is a client side library and it cannot be imported in your server side code. Therefore, you will need to use [next/dynamic](https://nextjs.org/docs/advanced-features/dynamic-import) to load your Map component at client side.
+3. Since [azure-maps-control](https://www.npmjs.com/package/azure-maps-control) is a client side library and it cannot be imported in your server side code. Therefore, you will need to use [next/dynamic](https://nextjs.org/docs/advanced-features/dynamic-import) to load your Map component at client side.
 
 ```ts
 // pages/index.tsx
@@ -41,11 +27,6 @@ const DynamicMap = dynamic(() => import("../components/Map"), {
 const Home: NextPage = () => <DynamicMap />;
 
 export default Home;
-```
-
-5. Finally, add the following style sheet to your page
-```html
-<link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css"/>
 ```
 
 
