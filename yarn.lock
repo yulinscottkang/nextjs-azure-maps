@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@azure/msal-browser@^2.32.1":
+  version "2.37.1"
+  resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-2.37.1.tgz#7e3fa7df9c6e74eb1fb640e73ef3b5b4407ee98d"
+  integrity sha512-EoKQISEpIY39Ru1OpWkeFZBcwp6Y0bG81bVmdyy4QJebPPDdVzfm62PSU0XFIRc3bqjZ4PBKBLMYLuo9NZYAow==
+  dependencies:
+    "@azure/msal-common" "13.1.0"
+
+"@azure/msal-common@13.1.0":
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-13.1.0.tgz#73a787ec1e7880c30b187cf451404af547d95339"
+  integrity sha512-wj+ULrRB0HTuMmtrMjg8j3guCx32GE2BCPbsMCZkHgL1BZetC3o/Su5UJEQMX1HNc9CrIaQNx5WaKWHygYDe0g==
+
 "@babel/runtime-corejs3@^7.10.2":
   version "7.19.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.19.0.tgz#0df75cb8e5ecba3ca9e658898694e5326d52397f"
@@ -55,6 +67,11 @@
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
+
+"@mapbox/mapbox-gl-supported@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@mapbox/mapbox-gl-supported/-/mapbox-gl-supported-2.0.1.tgz#c15367178d8bfe4765e6b47b542fe821ce259c7b"
+  integrity sha512-HP6XvfNIzfoMVfyGjBckjiAOQK9WfX0ywdLubuPMPv+Vqf5fj0uCbgBQYpiqcWZT6cbyyRnTSXDheT1ugvF6UQ==
 
 "@next/env@12.3.0":
   version "12.3.0"
@@ -165,11 +182,6 @@
   integrity sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==
   dependencies:
     tslib "^2.4.0"
-
-"@types/adal-angular@^1.0.1":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@types/adal-angular/-/adal-angular-1.0.2.tgz#4addf95ac4453c2b384caff326f285d40a13e057"
-  integrity sha512-p/Y/oFq+q8/sYyfZCpVxZ1h5OgsynbBJG4EiiUVGESSlh4Ch+aXvHfuv5ZqUSYbp0JD2ZL1L+x1T3NsLtfqC0Q==
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -347,12 +359,13 @@ axobject-query@^2.2.0:
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.2.0.tgz#943d47e10c0b704aa42275e20edf3722648989be"
   integrity sha512-Td525n+iPOOyUQIeBfcASuG6uJsDOITl7Mds5gFyerkWiX7qhUTdYUBlSgNMyVqtSJqwpt1kXGLdUt6SykLMRA==
 
-azure-maps-control@2.0.32:
-  version "2.0.32"
-  resolved "https://registry.yarnpkg.com/azure-maps-control/-/azure-maps-control-2.0.32.tgz#9844449275f964af4acd530cbcd6f3842758a23e"
-  integrity sha512-MgesL97292XIFNWVo/7koVpxGYW9g5AJx5XlJCXpg0teYUPrz+YsMUnyvNOQviHO3stvsBtQpEGT5gdwVibVIA==
+azure-maps-control@^3.0.0-preview.8:
+  version "3.0.0-preview.8"
+  resolved "https://registry.yarnpkg.com/azure-maps-control/-/azure-maps-control-3.0.0-preview.8.tgz#4552e2cfeeb8e32eff2dff15b6dd33c04bc61a47"
+  integrity sha512-ZyzRym45EoCYE77DnO3Qtzo+TLC2EqvMiQnIj9EZjqnyd7kP9HtwyOPgOL5ypxafyU3y6ys2Hab/2Dy2HgRGFg==
   dependencies:
-    "@types/adal-angular" "^1.0.1"
+    "@azure/msal-browser" "^2.32.1"
+    "@mapbox/mapbox-gl-supported" "^2.0.1"
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -1447,12 +1460,11 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-react-azure-maps@^1.0.0-beta.0:
-  version "1.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/react-azure-maps/-/react-azure-maps-1.0.0-beta.0.tgz#cc9797bfb2a7be91b006c0a460f2bb44bbd0e766"
-  integrity sha512-959oELiPxKEWFgTNx0HIlW5w51jjSiv8nOVt4s3Y9lUhpmmPr7lAnI9RTpVCDPDXRwCyfcZClGzODttE0JrJYw==
+react-azure-maps@^1.0.0-beta.2:
+  version "1.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/react-azure-maps/-/react-azure-maps-1.0.0-beta.2.tgz#4913d9106c974a9b8f6bd908016b9a31679b10ef"
+  integrity sha512-O/Y+ppaugbvYQv16AKHpalqOqXwuAdutl+EkSFI1cD9QGi4f0sFkpWBLpZi5vXI07rjsjvJqgcCLYiQxBaXOyA==
   dependencies:
-    azure-maps-control "2.0.32"
     guid-typescript "^1.0.9"
 
 react-dom@18.2.0:
