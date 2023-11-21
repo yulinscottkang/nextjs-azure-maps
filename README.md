@@ -3,9 +3,9 @@ This example shows how to integrate [react-azure-maps](https://www.npmjs.com/pac
 
 ## Prerequisite
 
-1. Install [react-azure-maps@next](https://www.npmjs.com/package/react-azure-maps) to your `dependencies`.
+1. Install [react-azure-maps](https://www.npmjs.com/package/react-azure-maps) to your `dependencies`.
 ```
-yarn add react-azure-maps@next
+yarn add react-azure-maps
 ```
 
 2. Import the following style sheet to your component or page
