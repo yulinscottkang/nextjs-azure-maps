@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "azure-maps-control": "^3.0.2",
+    "@azure/msal-browser": "^3.10.0",
+    "@azure/msal-react": "^2.0.12",
+    "azure-maps-control": "^3.1.2",
     "next": "^14.0.3",
     "react": "18.2.0",
     "react-azure-maps": "^1.0.0",
